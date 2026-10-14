@@ -16,7 +16,7 @@ call_payoff = np.maximum(S - K, 0) - premium
 # Buy at lower market price and rights to sell at higher price (K) --> profit
 put_payoff = np.maximum(K - S, 0) - premium
 
-# 3. Plot the payoffs
+# Plot the payoffs
 plt.figure(figsize=(10, 6))
 plt.plot(S, call_payoff, label='Long Call Payoff', linewidth=2)
 plt.plot(S, put_payoff, label='Long Put Payoff', linewidth=2)
